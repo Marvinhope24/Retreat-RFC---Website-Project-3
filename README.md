@@ -12,23 +12,23 @@ Rules when editing the website
       - Headings = Cambria Math (Font size = 35px)
       - Body = Century Gothic
 =============================================================================
-Tasks:
-Marvin Hope - Register 
-            - 1st Team
+- Tasks:
+- Marvin Hope - Register 
+              - 1st Team
             
-Jayden Johnson - Gallery
-               - 2nd Team
+- Jayden Johnson - Gallery
+                 - 2nd Team
                
-Ra'eesah Williams - Home 
-                  - News
+- Ra'eesah Williams - Home 
+                    - News
                   
-Tiffany Kiwiets - History
-                - 3rd Team
+- Tiffany Kiwiets - History
+                  - 3rd Team
                 
-Siyabonga Masango - About
+- Siyabonga Masango - About
 
-Kegomoditwe Leshope - Fixtures
-                    - Results
+- Kegomoditwe Leshope - Fixtures
+                      - Results
 
                     
 **** ALL PAGES MUST BE COMPLETED BEFORE THE 17TH AUGUST 2022 AT 23H59 ****
