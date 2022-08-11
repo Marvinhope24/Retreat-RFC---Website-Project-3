@@ -11,7 +11,7 @@ Rules when editing the website
 - Font:
       - Headings = Cambria Math (Font size = 35px)
       - Body = Century Gothic
-=========================================================================================================
+=============================================================================
 Tasks:
 Marvin Hope - Register 
             - 1st Team
