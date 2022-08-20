@@ -477,11 +477,22 @@ hr {
 	padding-bottom: 5px;
 	border-radius: 12px;
 	filter: grayscale(75%);
-	transition: 0.7s;
+	transition: 0.3s;
 }
 
 .gallery img:hover{
 	filter: grayscale(0);
 }
 
-
+/*------------------------------ Log In ------------------------------*/
+.loginb{
+	background: purple;
+	color: white;
+	border-radius: 25px;
+	padding: 10px 20px;
+	display: block;
+	font-size: 16px;
+	margin-left: 864px;
+	margin-right: 13px;
+	margin-top: 20px;
+}
