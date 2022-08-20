@@ -5,6 +5,94 @@
 	<title>Register - Retreat RFC</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+<style type = "text/css">
+	.Reg label{
+		margin-left: 20%;
+		font-family: "Century Gothic";
+		display:inline-block;
+		width: 300px;
+	}
+	#permission1 {
+		text-align: center;
+		margin-left: 28%;
+	}
+	.checkbox {
+		width: 20px;
+		height: 20px;
+		margin-left: 45%;
+	}
+	/* Headings*/
+	h1 {
+		text-align: center;
+		margin-right: 5%;
+		text-transform: uppercase;
+		font: 30px/30px "Times New Roman", Times, serif;
+	}
+
+	h5 {
+		text-align: center;
+		margin-right: 5%;
+		text-transform: uppercase;
+		font: 30px/30px "Times New Roman", Times, serif;
+	}
+
+	h3 {
+		text-align: center;
+		margin-right: 5%;
+		text-transform: uppercase;
+		font: 30px/30px "Times New Roman", Times, serif;
+	}
+	h4 {
+		text-align: center;
+		margin-left: 4%;
+		text-transform: uppercase;
+		font: 25px/25px "Times New Roman", Times, serif;
+	}
+
+</style>
+<script>
+	function SelectAge() {
+		var ageGroup = document.getElementById("age");
+		if(ageGroup.value == "seniors") {
+			document.getElementById("school").style.visibility="hidden";
+			document.getElementById("school1").style.visibility="hidden";
+			document.getElementById("grade").style.visibility="hidden";
+			document.getElementById("grade1").style.visibility="hidden";
+		}
+		else {
+			document.getElementById("school").style.visibility="visible";
+			document.getElementById("school1").style.visibility="visible";
+			document.getElementById("grade").style.visibility="visible";
+			document.getElementById("grade1").style.visibility="visible";
+		}
+		if(ageGroup.value == "under11" ||ageGroup.value == "under14") {
+			document.getElementById("work").style.visibility="hidden";
+			document.getElementById("work1").style.visibility="hidden";
+		}
+		else {
+			document.getElementById("work").style.visibility = "visible";
+			document.getElementById("work1").style.visibility="visible";
+
+		}
+		if(ageGroup.value == "under19" || ageGroup.value == "seniors" ) {
+			document.getElementById("checkbox").style.visibility="hidden";
+			document.getElementById("permission1").style.visibility="hidden";
+			document.getElementById("school").style.visibility="hidden";
+			document.getElementById("school1").style.visibility="hidden";
+			document.getElementById("grade").style.visibility="hidden";
+			document.getElementById("grade1").style.visibility="hidden";
+		} else {
+			document.getElementById("checkbox").style.visibility="visible";
+			document.getElementById("permission1").style.visibility="visible";
+			document.getElementById("school").style.visibility="visible";
+			document.getElementById("school1").style.visibility="visible";
+			document.getElementById("grade").style.visibility="visible";
+			document.getElementById("grade1").style.visibility="visible";
+		}
+	}
+
+</script>
+<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <body>
 	<div id="background">
 		<div id="page">
@@ -59,36 +147,82 @@
 				<div class="box">
 					<div>
 						<div class="body">
-							<h1>Food</h1>
-							<ul id="foods">
-								<li>
-									<h2><a href="register.html">SeaFood Special</a></h2>
-									<div class="infos">
-										<a href="register.html"><img src="images/seafoods.jpg" alt="Img" height="169" width="780"><span class="cover"></span></a>
-										<p>
-											<span>Fried Salmon Special</span> I'm a product overview. Here you can write more information about your product. Buyers like to know ...
-										</p>
-									</div>
-								</li>
-								<li>
-									<h2><a href="register.html">Sumptuous Desserts</a></h2>
-									<div class="infos">
-										<a href="register.html"><img src="images/desserts.jpg" alt="Img" height="169" width="780"><span class="cover"></span></a>
-										<p>
-											<span>Choco Ice Cream Sandwich</span> I'm a product overview. Here you can write more information about your product. Buyers like to know ...
-										</p>
-									</div>
-								</li>
-								<li>
-									<h2><a href="register.html">Buffet</a></h2>
-									<div class="infos">
-										<a href="register.html"><img src="images/buffet.jpg" alt="Img" height="169" width="780"><span class="cover"></span></a>
-										<p>
-											<span>Mixed Buffet</span> I'm a product overview. Here you can write more information about your product. Buyers like to know ...
-										</p>
-									</div>
-								</li>
-							</ul>
+
+							<div data-netlify-identity-button></div>
+
+								<h4 contenteditable="true" >Registration opens 1st February 2022 - ends 31st May 2022 </h4>
+							<h1>Registration</h1>
+							<div class = "Reg" >
+								<form name="registration" method="POST" netlify honeypot="bot field" data-netlify="true">
+
+									<p hidden aria-hidden="true">
+										<label>Don't fill out this form. <input name="bot-field"/></label>
+									</p>
+
+									<label for="fname">First Name:</label >
+									<input type="text" id="fname" name="fname" placeholder="First Name" required><br><br>
+
+									<label for="lname">Last Name:</label>
+									<input type="text" id="lname" name="lname" placeholder="Last Name" required><br><br>
+
+									<label for="age">Choose your age group:</label>
+									<select name="age" id="age" onclick="SelectAge()">
+										<option value ="blank"> </option>
+										<option value="under11">Under 11</option>
+										<option value="under14">Under 14</option>
+										<option value="under19">Under 19</option>
+										<option value="seniors">Seniors</option>
+									</select>
+									<br><br>
+
+									<label>Date of birth</label>
+									<input type="date" id="Date of birth" name="Date of birth" required><br><br>
+
+									<label id= "school1" for="school">School:</label>
+									<input type="text" id="school" name="school" placeholder="School Name"><br><br>
+
+									<label id="grade1" for="grade">Grade:</label>
+									<input type="text" id="grade" name="grade" placeholder="Grade" ><br><br>
+
+									<label for="contact">Contact:</label>
+									<input type="text" id="contact" name="contact" placeholder="Contact" required ><br><br>
+
+									<label for="contact">Gmail:</label>
+									<input type="text" id="Gmail" name="Gmail" placeholder="Gmail" required><br><br>
+
+									<label for="idnumber">ID Number:</label>
+									<input type="text" id="idnumber" name="idnumber" placeholder="ID Number" required><br><br>
+
+									<label id = "work1" for="work">Place of Work:</label>
+									<input type="text" id="work" name="work" placeholder="Optional*">
+
+									<h5>Permission</h5>
+									<label id = "permission1" class="checkbox"> I parent/guardian allow Retreat RFC to train my child </label><br><br>
+									<input class="checkbox" type="checkbox" id="checkbox" >
+
+									<h3>Physical Address</h3>
+									<label for="address">Address</label>
+									<input type="text" id="address" name="address" placeholder="Address" required><br><br>
+
+									<label for="street">Street Name:</label>
+									<input type="text" id="street" name="street" placeholder="Street Name" required><br><br>
+
+									<label for="suburb">Suburb:</label>
+									<input type="text" id="suburb" name="suburb" placeholder="Suburb" required><br><br>
+
+									<label for="city">City:</label>
+									<input type="text" id="city" name="city" placeholder="City" required><br><br>
+
+									<label for="postalcode">Postal Code:</label>
+									<input type="text" id="postalcode" name="postalcode" placeholder="Postal Code" required><br><br>
+
+									<label for="province">Province:</label>
+									<input type="text" id="province" name="province" placeholder="Province" required><br><br>
+
+									<button id="button1" class="button1"> Sign-up!</button>
+									<br><br>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>

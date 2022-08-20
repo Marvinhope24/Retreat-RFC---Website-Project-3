@@ -1,8 +1,11 @@
 
 body {
-	background: #800080 url(../images/bg-body.jpg) repeat left bottom;
-	font-family: "Times New Roman", Times, serif;
+	background: #800080 url(../images/back.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	margin: 0;
+
 }
 #background {
 	min-height: 100%;
@@ -39,7 +42,6 @@ img {
 	margin-left: 49px;
 }
 /** Navigation **/
-
 #navigation ul {
 	background-color: purple;
 	display: inline-block;
@@ -92,34 +94,31 @@ img {
 	visibility: visible;
 	opacity: 1;
 }
+
+/*------------------------------ REGISTRATION ------------------------------*/
+#button1 {
+	background: purple;
+	color: white;
+	border-radius: 30px;
+	padding: 15px 25px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	margin-left: 40%;
+	border: 0.6vh solid white;
+}
 /*------------------------------ CONTENTS ------------------------------*/
 #contents {
 	display: inline-block;
 	width: 865px;
 	padding: 0 47px;
+}
+.box1 ul li {
+	text-align: left;
+	margin-left: 35%;
+	list-style: none;
+}
 
-}
-#contents h1 {
-	color: #800080;
-	font: 26px/30px "Times New Roman", Times, serif;
-	margin: 18px 0 20px;
-	padding-left: 2px;
-	text-transform: uppercase;
-}
-#contents div.body h1, #contents h2 {
-	color: #2d2b2b;
-	font: 30px/30px "Times New Roman", Times, serif;
-	margin: 0 0 18px;
-	text-transform: uppercase;
-}
-#contents h2 {
-	font-size: 22px;
-	margin: 0 0 30px;
-}
-#contents h2 a {
-	color: #2d2b2b;
-	text-decoration: none;
-}
 #contents p {
 	color: #2d2b2b;
 	font-size: 15px;
@@ -267,22 +266,22 @@ hr {
 	text-decoration: none;
 }
 #testimonials p span a:hover {
-	color: #800080;
+	color: white;
 }
 /** Rooms, Foods Dive Sites **/
-#rooms, #foods, #sites {
+#rooms, #sites {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-#rooms li, #foods li, #sites li {
+#rooms li,  #sites li {
 	display: inline-block;
 	width: 784px;
 	border-top: 1px solid #b7b7b7;
 	padding: 30px 0;
 	position: relative;
 }
-#rooms li:first-child, #foods li:first-child, #sites li:first-child {
+#rooms li:first-child, #sites li:first-child {
 	border-top: 0;
 }
 #rooms li img {
@@ -301,39 +300,7 @@ hr {
 	position: absolute;
 	bottom: 30px;
 }
-/** Food **/
-#foods li > div.infos {
-	height: 169px;
-	width: 780px;
-	position: relative;
-}
-#foods li > div.infos p {
-	background: url(../images/bg-foodDetail.png) repeat;
-	color: #2d2b2b;
-	display: none;
-	height: 60px;
-	width: 740px;
-	padding: 6px 20px 0;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-}
-#foods li > div.infos p span {
-	display: block;
-	font: 22px/22px "Times New Roman", Times, serif;
-}
-#foods li > div.infos:hover span.cover {
-	background: url(../images/bg-foodInfos.png) repeat;
-	display: inline-block;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-#foods li > div.infos:hover p {
-	display: block;
-}
+
 /** Dive Site **/
 #sites li {
 	padding-bottom: 0;
@@ -406,63 +373,6 @@ hr {
 #news ul li {
 	margin-bottom: 12px;
 }
-/** Contact **/
-#contact form {
-	float: right;
-	color: #5a4535;
-	height: 320px;
-	width: 420px;
-	border: 1px solid #5a4535;
-	padding: 19px 19px 6px;
-}
-#contact form table {
-	border-collapse: collapse;
-}
-#contact form table td {
-	padding-bottom: 6px;
-}
-#contact table td:first-child {
-	font-size: 14px;
-	line-height: 30px;
-	width: 180px;
-	text-transform: uppercase;
-}
-#contact table td.txtarea {
-	vertical-align: top;
-}
-#contact form input {
-	height: 17px;
-	line-height: 17px;
-	width: 278px;
-	border: 1px solid #5a4535;
-	border-radius: 2px;
-}
-#contact textarea {
-	height: 143px;
-	line-height: 17px;
-	width: 338px;
-	border: 1px solid #5a4535;
-	border-radius: 2px;
-	overflow: auto;
-	resize: none;
-}
-#contact input.btn {
-	background: url(../images/btn-send.png) no-repeat -70px 0;
-	cursor: pointer;
-	height: 26px;
-	width: 60px;
-	border: 0;
-	padding: 0;
-	margin: 0;
-}
-#contact input.btn:hover {
-	background-position: 0 0;
-}
-#contact p span {
-	display: block;
-	text-transform: uppercase;
-}
-
 
 /*------------------------------ FOOTER ------------------------------*/
 #footer {
