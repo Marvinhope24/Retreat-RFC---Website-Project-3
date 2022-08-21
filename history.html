@@ -4,6 +4,63 @@
 	<meta charset="UTF-8">
 	<title>History - Retreat RFC</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.column {
+			float: left;
+			width: 33.33%;
+			padding: 5px;
+		}
+
+		/* Clearfix (clear floats) */
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		p {
+
+			border-top: 2px dashed;
+			border-color: blue !important;
+			margin:0; padding: 30px;
+		}
+
+
+
+		p:nth-child(even) {
+			border-left: 2px dashed;
+			border-top-left-radius: 30px;
+			border-bottom-left-radius: 30px;
+			margin-right: 30px;
+			padding-right: 0;
+		}
+
+		p:nth-child(odd) {
+			border-right: 2px dashed;
+			border-top-right-radius: 30px;
+			border-bottom-right-radius: 30px;
+			margin-left: 30px;
+			padding-left: 0;
+		}
+
+		p:first-child {
+			border-top: 0;
+			border-top-right-radius:0;
+			border-top-left-radius:0;
+		}
+
+		p:last-child {
+			border-bottom-right-radius:0;
+			border-bottom-left-radius:0;
+		}
+
+	</style>
+
 </head>
 <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <body>
@@ -63,38 +120,90 @@
 				<div class="box">
 					<div>
 						<div class="body">
-							<h1>Rooms</h1>
-							<ul id="rooms">
-								<li>
-									<a href="history.html"><img src="images/first-class.jpg" alt="Img"></a>
-									<h2><a href="history.html">First Class Room</a></h2>
-									<p>
-										Cras dui sapien, feugiat vitae tristique ut, lobortis tempor orci. Donec pulvinar sagittis metus ut tristique. Pellentes que habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas idios.
-									</p>
-									<span class="rate">Rate: 220 / Day</span>
-								</li>
-								<li>
-									<a href="history.html"><img src="images/deluxe.jpg" alt="Img"></a>
-									<h2><a href="history.html">Deluxe Room</a></h2>
-									<p>
-										Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis.
-									</p>
-									<span class="rate">Rate: 150 / Day</span>
-								</li>
-								<li>
-									<a href="history.html"><img src="images/suite.jpg" alt="Img"></a>
-									<h2><a href="history.html">Suite Room</a></h2>
-									<p>
-										Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis.
-									</p>
-									<span class="rate">Rate: 180 / Day</span>
-								</li>
-							</ul>
+							<h1 style="text-align: center"> Our History </h1>
+								<p> <h3 style="text-align: center"> 1898 </h3>
+							The year 1898 saw the establishment of the club as a result of the amalgamation of the
+							Lakeside and United Rugby clubs. The colours that were maroon and white, and the oak
+							leaf and two acorns as the emblem.
+							<div class="row">
+								<div class="column">
+									<img src="images/HistoryPics/ima4.jpg" alt="Image of the team" style="width: 100%">
+								</div>
+								<div class="column">
+									<img src="images/HistoryPics/ima2.jpg" alt="Image of the team" style="width: 100%">
+								</div>
+								<div class="column">
+									<img src="images/HistoryPics/ima3.jpg" alt="Image of the team" style="width: 100%">
+								</div>
+							</div></p>
+								<p> <h3 style="text-align: center"> 1921 </h3>
+							The historic merger took place in the Dutch Reformed Church school hall near the site of the
+							present Blue Route mall in Retreat. From 1898 to 1921 Retreat functioned as a social rugby playing club. The
+							foundation families were the Collers, Asias, Kirstens, and Louws.
+							<div class="row">
+								<div class="column">
+									<img src="images/HistoryPics/ima6.jpg" alt="Image of the team" style="width: 100%">
+								</div>
+								<div class="column">
+									<img src="images/HistoryPics/ima5.jpg" alt="Image of the team" style="width: 100%">
+								</div>
+								<div class="column">
+									<img src="images/HistoryPics/ima7.jpg" alt="Image of the team" style="width: 100%">
+								</div>
+							</div></p>
+								<p> <h3 style="text-align: center"> 1922 </h3>
+							In 1922 the club affilated to the Mowbray based City and Suburban RFU and it qualified
+							for admission to the First Division by beating Primrose, and in 1924 the club won its first
+							major trophy, the Commando Cup.
+							<div class="row">
+								<div class="column">
+									<img src="images/HistoryPics/ima1.jpg" alt="Image of the team" style="width: 100%">
+								</div>
+								<div class="column">
+									<img src="images/HistoryPics/ima8.jpg" alt="Image of the team" style="width: 100%">
+								</div>
+								<div class="column">
+									<img src="images/HistoryPics/ima11.jpg" alt="Image of the team" style="width: 100%">
+								</div>
+							</div></p>
+								<p> <h3 style="text-align: center"> 1920's </h3>
+							Sometime in the 1920's the famous purple and white colours were adopted, and in the
+							post-war period the emblem, the gun, reminiscent of the First British Occupation of
+							the Cape (1795), and the ensuing retreat of the Dutch forces facing the approach of
+							the Red Coats along the route late known as Military Road.
+							<div class="row">
+								<div class="column">
+									<img src="images/HistoryPics/ima9.jpg" alt="Image of the team" style="width: 100%">
+								</div>
+								<div class="column">
+									<img src="images/HistoryPics/ima10.jpg" alt="Image of the team" style="width: 100%">
+								</div>
+								<div class="column">
+									<img src="images/HistoryPics/ima21.jpg" alt="Image of the team" style="width: 100%">
+								</div>
+							</div></p>
+								<p> <h3 style="text-align: center"> 1936 </h3>
+							In 1936 Retreat lost its Kalk bay - based players who had defected to Thistle RFC.
+							<div class="row">
+								<div class="column">
+									<img src="images/HistoryPics/ima13.jpg" alt="Image of the team" style="width: 80%">
+								</div>
+								<div class="column">
+									<img src="images/HistoryPics/ima14.jpg" alt="Image of the team" style="width: 100%">
+								</div>
+								<div class="column">
+									<img src="images/HistoryPics/ima15.jpg" alt="Image of the team" style="width: 100%">
+								</div>
+							</div></p>
+
+
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		</div>
+	</div>
 		<div id="footer">
 			<div>
 				<ul class="navigation">
