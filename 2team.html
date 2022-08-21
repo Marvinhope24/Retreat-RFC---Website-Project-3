@@ -104,23 +104,19 @@
                 </ul>
             </div>
         </div>
-        <div  id="contents">
+        <div id="contents">
             <div class="box1">
-                <div>
-                    <div id="contact5" contenteditable="true" class="body">
-                        <script>
-                            var contact5 = document.getElementById('contact5');
-                            contact5.innerHTML = localStorage.getItem('contact5');
-                            contact5.addEventListener('blur',function () {
-                                localStorage.setItem('contact5',this.innerHTML);
-                            });
-                        </script>
+                    <div id="contact" class="body">
+
                         <h1 contenteditable="false">2nd Team</h1>
-                        <h2>30 July 2022</h2>
-                        <ul>
+
+                        <ul contenteditable="true" id="list2">
+
+                            <h2>30 July 2022</h2>
                             <h3 contenteditable="false">Coaches</h3>
                             <li>Manager: </li>
                             <li>Assistant Coach: </li>
+
                             <h4 contenteditable="false">Forwards</h4>
                             <li>1: Loose-head Prop - Randall Jackson</li>
                             <li>2: Hooker - David Jordaan </li>
@@ -130,6 +126,7 @@
                             <li>6: Blind-side Flanker - Paul Ford </li>
                             <li>7: Open-side Flanker - Daniel Khumalo</li>
                             <li>8: Number Eight - Kyle Jordaan</li>
+
                             <h5 contenteditable="false">Back-line</h5>
                             <li>9: Scrum-Half - Waarith Lincoln </li>
                             <li>10: Fly-Half - Brandon Adams </li>
@@ -150,10 +147,19 @@
                             <li>22: Reserve - Kian Arendse</li>
                         </ul>
                     </div>
-                </div>
             </div>
         </div>
+        <script>
+            var list2 = document.getElementById('list2');
+
+            list2.innerHTML = localStorage.getItem('list2');
+
+            list2.addEventListener('blur',function () {
+                localStorage.setItem('list2',this.innerHTML);
+            });
+        </script>
     </div>
+
     <div id="footer">
         <div>
             <ul class="navigation">

@@ -47,7 +47,6 @@
 		text-transform: uppercase;
 		font: 20px/20px "Times New Roman", Times, serif;
 	}
-
 </style>
 <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
@@ -107,24 +106,14 @@
 
 			<div id="contents">
 				<div class="box1">
-					<div>
-						<div contenteditable="true" id="contact" class="body">
-							<script>
-								var contact = document.getElementById('contact');
-
-								contact.innerHTML = localStorage.getItem('contact');
-
-								contact.addEventListener('blur',function () {
-									localStorage.setItem('contact',this.innerHTML);
-								});
-							</script>
+						<div id="contact" class="body">
 							<h1 contenteditable="false">1st Team</h1>
 							<h2>30 July 2022</h2>
-							<ul>
+
+							<ul contenteditable="true" id="list1">
 								<h3 contenteditable="false">Coaches</h3>
 								<li>Manager: Frederick Stallmester</li>
 								<li>Assistant Coach: </li>
-
 								<h4 contenteditable="false">Forwards</h4>
 								<li>1: Loose-head Prop - Clint Adonis</li>
 								<li>2: Hooker - Thurston Martin </li>
@@ -134,7 +123,6 @@
 								<li>6: Blind-side Flanker - Gerschwin Esau </li>
 								<li>7: Open-side Flanker - Christian Manzanga</li>
 								<li>8: Number Eight - Sheldon Scheepers</li>
-
 								<h5 contenteditable="false">Back-line</h5>
 								<li>9: Scrum-Half - Herschelle Buckenjohn </li>
 								<li>10: Fly-Half - Jody Brunintjies (C)</li>
@@ -144,7 +132,7 @@
 								<li>14: Right Wing - Jacques Solomons</li>
 								<li>15: Full-Back - Chestlyn Abrahams </li>
 							</ul>
-							<ul>
+							<ul contenteditable="true">
 								<h6 contenteditable="false">Substitutions</h6>
 								<li>16: Reserve - Keith Grobbelaar</li>
 								<li>17: Reserve - Durando Adams </li>
@@ -153,11 +141,18 @@
 								<li>20: Reserve - Terelle Carlson</li>
 							</ul>
 						</div>
-					</div>
 				</div>
 			</div>
-		</div>
+			<script>
+				var list1 = document.getElementById('list1');
 
+				list1.innerHTML = localStorage.getItem('list1');
+
+				list1.addEventListener('blur',function () {
+					localStorage.setItem('list1',this.innerHTML);
+				});
+			</script>
+		</div>
 		<div id="footer">
 			<div>
 				<ul class="navigation">
