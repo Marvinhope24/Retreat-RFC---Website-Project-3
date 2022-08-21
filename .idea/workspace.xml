@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ba98b12-5441-4d19-870b-0e5395801d7a" name="Changes" comment="fix version 2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1team.html" beforeDir="false" afterPath="$PROJECT_DIR$/1team.html" afterDir="false" />
-    </list>
+    <list default="true" id="3ba98b12-5441-4d19-870b-0e5395801d7a" name="Changes" comment="1st team fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +58,7 @@
       <workItem from="1660985100387" duration="2626000" />
       <workItem from="1661031451880" duration="5045000" />
       <workItem from="1661071748819" duration="5744000" />
-      <workItem from="1661080737616" duration="9372000" />
+      <workItem from="1661080737616" duration="9719000" />
     </task>
     <task id="LOCAL-00001" summary="Home page completed">
       <created>1660898703267</created>
@@ -119,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661094813985</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1st team fix">
+      <created>1661095095656</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661095095656</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +149,7 @@
     <MESSAGE value="fix" />
     <MESSAGE value="fix version 1" />
     <MESSAGE value="fix version 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix version 2" />
+    <MESSAGE value="1st team fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="1st team fix" />
   </component>
 </project>
