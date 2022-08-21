@@ -4,51 +4,50 @@
     <meta charset="UTF-8">
     <title>Team Sheet - Retreat RFC</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
-
-    <style type="text/css">
-        h1 {
-            text-align: center;
-            margin-left: 4%;
-            text-transform: uppercase;
-            font: 25px/25px "Times New Roman", Times, serif;
-        }
-
-        h2 {
-            text-align: center;
-            margin-left: 6%;
-            text-transform: uppercase;
-            font: 25px/25px "Times New Roman", Times, serif;
-        }
-
-        h3 {
-            text-align: center;
-            margin-right: 0%;
-            text-transform: uppercase;
-            font: 20px/20px "Times New Roman", Times, serif;
-        }
-
-        h4 {
-            text-align: center;
-            margin-left: 0%;
-            text-transform: uppercase;
-            font: 20px/20px "Times New Roman", Times, serif;
-        }
-
-        h5 {
-            text-align: center;
-            margin-left: 0%;
-            text-transform: uppercase;
-            font: 20px/20px "Times New Roman", Times, serif;
-        }
-
-        h6 {
-            text-align: center;
-            margin-left: 0%;
-            text-transform: uppercase;
-            font: 20px/20px "Times New Roman", Times, serif;
-        }
-    </style>
 </head>
+<style type="text/css" >
+    h1 {
+        text-align: center;
+        margin-left: 4%;
+        text-transform: uppercase;
+        font: 25px/25px "Times New Roman", Times, serif;
+    }
+
+    h2 {
+        text-align: center;
+        margin-left: 6%;
+        text-transform: uppercase;
+        font: 25px/25px "Times New Roman", Times, serif;
+    }
+
+    h3 {
+        text-align: center;
+        margin-right: 0%;
+        text-transform: uppercase;
+        font: 20px/20px "Times New Roman", Times, serif;
+    }
+
+    h4 {
+        text-align: center;
+        margin-left: 0%;
+        text-transform: uppercase;
+        font: 20px/20px "Times New Roman", Times, serif;
+    }
+
+    h5 {
+        text-align: center;
+        margin-left: 0%;
+        text-transform: uppercase;
+        font: 20px/20px "Times New Roman", Times, serif;
+    }
+
+    h6 {
+        text-align: center;
+        margin-left: 0%;
+        text-transform: uppercase;
+        font: 20px/20px "Times New Roman", Times, serif;
+    }
+</style>
 <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <body>
 <div id="background">
@@ -106,17 +105,14 @@
         <div id="contents">
             <div class="box">
                 <div>
-                    <div id="contact4" class="body">
-                        <script>
-                            var contact4 = document.getElementById('contact4');
-                            contact4.innerHTML = localStorage.getItem('contact4');
-                            contact4.addEventListener('blur',function () {
-                                localStorage.setItem('contact4',this.innerHTML);
-                            });
-                        </script>
+                    <div id="contact" class="body">
+
                         <h1 contenteditable="false">3rd Team</h1>
                         <h2>19 August 2022</h2>
-                        <ul>
+
+                        <ul contenteditable="true" id="list3">
+
+
                             <h3 contenteditable="false">Coaches</h3>
                             <li>Manager: NA</li>
                             <li>Assistant Coach: NA</li>
@@ -149,12 +145,21 @@
                             <li>20: Reserve - NA</li>
                         </ul>
                     </div>
-
-                    </div>
                 </div>
             </div>
-        </div>
+            <script>
+                var list3 = document.getElementById('list3');
+
+                list3.innerHTML = localStorage.getItem('list3');
+
+                list3.addEventListener('blur',function () {
+                    localStorage.setItem('list3',this.innerHTML);
+                });
+            </script>
+
+            </div>
     </div>
+
     <div id="footer">
         <div>
             <ul class="navigation">
