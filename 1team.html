@@ -108,43 +108,50 @@
 			<div id="contents">
 				<div class="box1">
 					<div>
-						<div id="contact" class="body">
-							<h1>1st Team</h1>
-							<h2 contenteditable="true" >30 July 2022</h2>
+						<div contenteditable="true" id="contact" class="body">
+							<script>
+								var contact = document.getElementById('contact');
+
+								contact.innerHTML = localStorage.getItem('contact');
+
+								contact.addEventListener('blur',function () {
+									localStorage.setItem('contact',this.innerHTML);
+								});
+							</script>
+							<h1 contenteditable="false">1st Team</h1>
+							<h2>30 July 2022</h2>
 							<ul>
-								<h3 contenteditable="true">Coaches</h3>
-								<li contenteditable="true">Manager: Frederick Stallmester</li>
-								<li contenteditable="true">Assistant Coach: </li>
+								<h3 contenteditable="false">Coaches</h3>
+								<li>Manager: Frederick Stallmester</li>
+								<li>Assistant Coach: </li>
 
-								<h4>Forwards</h4>
-								<li contenteditable="true">1: Loose-head Prop - Clint Adonis</li>
-								<li contenteditable="true">2: Hooker - Thurston Martin </li>
-								<li contenteditable="true">3: Tight-head Prop - Ross Benjamin</li>
-								<li contenteditable="true">4: Second Row(Left) - Deven Stevens</li>
-								<li contenteditable="true">5: Second Row(Right) - Marlon Wilson</li>
-								<li contenteditable="true">6: Blind-side Flanker - Gerschwin Esau </li>
-								<li contenteditable="true">7: Open-side Flanker - Christian Manzanga</li>
-								<li contenteditable="true">8: Number Eight - Sheldon Scheepers</li>
+								<h4 contenteditable="false">Forwards</h4>
+								<li>1: Loose-head Prop - Clint Adonis</li>
+								<li>2: Hooker - Thurston Martin </li>
+								<li>3: Tight-head Prop - Ross Benjamin</li>
+								<li>4: Second Row(Left) - Deven Stevens</li>
+								<li>5: Second Row(Right) - Marlon Wilson</li>
+								<li>6: Blind-side Flanker - Gerschwin Esau </li>
+								<li>7: Open-side Flanker - Christian Manzanga</li>
+								<li>8: Number Eight - Sheldon Scheepers</li>
 
-								<h5>Back-line</h5>
-								<li contenteditable="true">9: Scrum-Half - Herschelle Buckenjohn </li>
-								<li contenteditable="true">10: Fly-Half - Jody Brunintjies (C)</li>
-								<li contenteditable="true">11: Left-Wing - Dylan Pieterse</li>
-								<li contenteditable="true">12: Inside Center - Luke Matthews </li>
-								<li contenteditable="true">13: Outside Center - Revaldo Ferguson</li>
-								<li contenteditable="true">14: Right Wing - Jacques Solomons</li>
-								<li contenteditable="true">15: Full-Back - Chestlyn Abrahams </li>
+								<h5 contenteditable="false">Back-line</h5>
+								<li>9: Scrum-Half - Herschelle Buckenjohn </li>
+								<li>10: Fly-Half - Jody Brunintjies (C)</li>
+								<li>11: Left-Wing - Dylan Pieterse</li>
+								<li>12: Inside Center - Luke Matthews </li>
+								<li>13: Outside Center - Revaldo Ferguson</li>
+								<li>14: Right Wing - Jacques Solomons</li>
+								<li>15: Full-Back - Chestlyn Abrahams </li>
 							</ul>
-
 							<ul>
-								<h6>Substitutions</h6>
-								<li contenteditable="true">16: Reserve - Keith Grobbelaar</li>
-								<li contenteditable="true">17: Reserve - Durando Adams </li>
-								<li contenteditable="true">18: Reserve - Randall Jackson</li>
-								<li contenteditable="true">19: Reserve - Kyle Jordaan </li>
-								<li contenteditable="true">20: Reserve - Terelle Carlson</li>
+								<h6 contenteditable="false">Substitutions</h6>
+								<li>16: Reserve - Keith Grobbelaar</li>
+								<li>17: Reserve - Durando Adams </li>
+								<li>18: Reserve - Randall Jackson</li>
+								<li>19: Reserve - Kyle Jordaan </li>
+								<li>20: Reserve - Terelle Carlson</li>
 							</ul>
-
 						</div>
 					</div>
 				</div>

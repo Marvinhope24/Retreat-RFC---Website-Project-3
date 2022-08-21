@@ -5,7 +5,7 @@
     <title>Team Sheet - Retreat RFC</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
-    <style>
+    <style type="text/css">
         h1 {
             text-align: center;
             margin-left: 4%;
@@ -106,15 +106,21 @@
         <div id="contents">
             <div class="box">
                 <div>
-                    <div id="contact" class="body">
-                        <h1>3rd Team</h1>
+                    <div id="contact4" class="body">
+                        <script>
+                            var contact4 = document.getElementById('contact4');
+                            contact4.innerHTML = localStorage.getItem('contact4');
+                            contact4.addEventListener('blur',function () {
+                                localStorage.setItem('contact4',this.innerHTML);
+                            });
+                        </script>
+                        <h1 contenteditable="false">3rd Team</h1>
                         <h2>19 August 2022</h2>
                         <ul>
-                            <h3>Coaches</h3>
+                            <h3 contenteditable="false">Coaches</h3>
                             <li>Manager: NA</li>
                             <li>Assistant Coach: NA</li>
-
-                            <h4>Forwards</h4>
+                            <h4 contenteditable="false">Forwards</h4>
                             <li>1: Loose-head Prop - NA</li>
                             <li>2: Hooker - NA </li>
                             <li>3: Tight-head Prop - NA</li>
@@ -124,7 +130,7 @@
                             <li>7: Open-side Flanker - NA</li>
                             <li>8: Number Eight - NA</li>
 
-                            <h5>Back-line</h5>
+                            <h5 contenteditable="false">Back-line</h5>
                             <li>9: Scrum-Half - NA </li>
                             <li>10: Fly-Half - NA (C)</li>
                             <li>11: Left-Wing - NA</li>
@@ -135,14 +141,13 @@
                         </ul>
 
                         <ul>
-                            <h6>Substitutions</h6>
+                            <h6 contenteditable="false">Substitutions</h6>
                             <li>16: Reserve - NA</li>
                             <li>17: Reserve - NA </li>
                             <li>18: Reserve - NA</li>
                             <li>19: Reserve - NA </li>
                             <li>20: Reserve - NA</li>
                         </ul>
-
                     </div>
 
                     </div>

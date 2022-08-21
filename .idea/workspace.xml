@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ba98b12-5441-4d19-870b-0e5395801d7a" name="Changes" comment="Login edit and links fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1team.html" beforeDir="false" afterPath="$PROJECT_DIR$/1team.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2team.html" beforeDir="false" afterPath="$PROJECT_DIR$/2team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3team.html" beforeDir="false" afterPath="$PROJECT_DIR$/3team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bg-pattern.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/btn-send.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/buffet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/deluxe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/desserts.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dive-site.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/first-class.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/food.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/kayak.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/reef1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/reef2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/reef3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/rooms.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sea-sound.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/seafoods.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/suite.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +55,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\RaeesahWilliams\IdeaProjects\Retreat-RFC-Website-Project-3\images" />
@@ -58,6 +78,7 @@
       <workItem from="1660891986513" duration="8082000" />
       <workItem from="1660985100387" duration="2626000" />
       <workItem from="1661031451880" duration="5045000" />
+      <workItem from="1661071748819" duration="5153000" />
     </task>
     <task id="LOCAL-00001" summary="Home page completed">
       <created>1660898703267</created>
