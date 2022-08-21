@@ -111,6 +111,7 @@
 							<h2>30 July 2022</h2>
 
 							<ul contenteditable="true" id="list1">
+
 								<h3 contenteditable="false">Coaches</h3>
 								<li>Manager: Frederick Stallmester</li>
 								<li>Assistant Coach: </li>
@@ -142,17 +143,18 @@
 								<li>20: Reserve - Terelle Carlson</li>
 							</ul>
 						</div>
+					<script>
+						var list1 = document.getElementById('list1');
+
+						list1.innerHTML = localStorage.getItem('list1');
+
+						list1.addEventListener('blur',function () {
+							localStorage.setItem('list1',this.innerHTML);
+						});
+					</script>
 				</div>
 			</div>
-			<script>
-				var list1 = document.getElementById('list1');
 
-				list1.innerHTML = localStorage.getItem('list1');
-
-				list1.addEventListener('blur',function () {
-					localStorage.setItem('list1',this.innerHTML);
-				});
-			</script>
 		</div>
 		<div id="footer">
 			<div>
