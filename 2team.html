@@ -148,17 +148,18 @@
                             <li>22: Reserve - Kian Arendse</li>
                         </ul>
                     </div>
+                <script>
+                    var list2 = document.getElementById('list2');
+
+                    list2.innerHTML = localStorage.getItem('list2');
+
+                    list2.addEventListener('blur',function () {
+                        localStorage.setItem('list2',this.innerHTML);
+                    });
+                </script>
             </div>
         </div>
-        <script>
-            var list2 = document.getElementById('list2');
 
-            list2.innerHTML = localStorage.getItem('list2');
-
-            list2.addEventListener('blur',function () {
-                localStorage.setItem('list2',this.innerHTML);
-            });
-        </script>
     </div>
 
     <div id="footer">
